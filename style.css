@@ -170,3 +170,71 @@ canvas {
     max-width: 100%;
     max-height: 100%;
 }
+
+@media (max-width: 768px) {
+
+    /* Stack left and right sections vertically */
+    main section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    main section .left,
+    main section .right {
+        width: 100%;
+    }
+
+    main section .right {
+        margin-top: var(--margin-md);
+    }
+
+    main section .bottom {
+        aspect-ratio: auto;
+        height: auto;
+        padding: var(--padding-md);
+    }
+
+    .presets {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* Slightly smaller paddings */
+    main section {
+        gap: var(--gutter-md);
+    }
+
+    main section .left {
+        gap: var(--gutter-sm);
+    }
+
+    main section .right {
+        gap: var(--gutter-sm);
+    }
+}
+
+@media (max-width: 375px) {
+    /* Reduce font sizes for very small phones */
+    /* body {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: var(--padding-xs) var(--padding-sm);
+        font-size: 0.85rem;
+    }
+    .preset-btn {
+        padding: var(--padding-xs) var(--padding-sm);
+    } */
+}
+
+@media (max-width: 320px) {
+    /* Ultra‑small screens */
+    /* body {
+        font-size: 0.8rem;
+    }
+    main section .bottom {
+        padding: var(--padding-sm);
+    } */
+}
